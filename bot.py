@@ -6,7 +6,7 @@ from data_loader import load_excel_data, load_pdf_data, search_student
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv("8831658490:AAHEEiBzy4uEHDz7oVAQmRzJfHDNkNGjYYQ")
+TOKEN = os.getenv("BOT_TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
