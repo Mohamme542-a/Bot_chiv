@@ -1,0 +1,28 @@
+<?php
+// ============== ZYRON SMS PANEL CONFIG ==============
+
+// رابط اللوحة الأصلية (مصدر الأرقام)
+define('INTS_BASE', 'http://151.80.19.204/ints');
+define('INTS_USER', 'YOUR_INTS_USERNAME');
+define('INTS_PASS', 'YOUR_INTS_PASSWORD');
+
+// بوت تلغرام
+define('TG_BOT_TOKEN', '123456:ABCDEF_YOUR_BOT_TOKEN');
+define('TG_GROUP_ID', '-1001234567890'); // آيدي المجموعة لاستقبال الرموز
+
+// رابط لوحتك بعد رفعها (بدون / في النهاية)
+define('PANEL_URL', 'https://yourdomain.com');
+
+// قاعدة البيانات (SQLite افتراضياً، لا تحتاج إعداد)
+define('DB_PATH', __DIR__ . '/../data/panel.db');
+
+// أمان الجلسة
+define('SESSION_NAME', 'ZYRONSID');
+
+// مهلة طلب الأرقام (ثواني)
+define('REQUEST_COOLDOWN', 5);
+
+// عدد الأرقام لكل دولة في الطلب
+define('NUMBERS_PER_REQUEST', 4);
+
+date_default_timezone_set('Asia/Riyadh');
